@@ -11,7 +11,7 @@ class Application:
         self.librarians = []
 
     def start(self):
-        # Instantiate 5 books
+        
         books_info = [("Le Petit Prince", "Antoine de Saint-Exupéry", "9782070408504"),
                       ("1984", "George Orwell", "9780451524935"),
                       ("To Kill a Mockingbird", "Harper Lee", "9780446310789"),
@@ -22,7 +22,7 @@ class Application:
             book = Book(title, author, isbn)
             self.library.add_book(book)
 
-        # Instantiate 5 members
+        
         members_info = [(1, "John", "Doe", 25),
                         (2, "Jane", "Smith", 28),
                         (3, "James", "Brown", 30),
@@ -33,7 +33,7 @@ class Application:
             member = Member(id, first_name, last_name, age)
             self.members.append(member)
 
-        # Instantiate 5 librarians
+        
         librarians_info = [(6, "Michael", "Johnson", 45),
                            (7, "Elizabeth", "Wilson", 39),
                            (8, "William", "Taylor", 42),
